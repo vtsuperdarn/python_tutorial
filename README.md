@@ -3,9 +3,10 @@ python_tutorial
 
 Python tutorial for Space@VT Grad seminar
 
-**Authors:**: 	AJ Ribeiro
-		Nathaniel A. Frissell
-		Sebastien de Larquier
+**Authors:** 	 
+		AJ Ribeiro    
+		Nathaniel A. Frissell    
+		Sebastien de Larquier    
 
 ### Content
 * Repository content
