@@ -49,6 +49,18 @@ In order to run the examples provided in this repository, you will need:
 
 ### Windows
 
+1.  Download and install Python 2.7 from http://www.python.org/download/
+2.  Add c:\Python and c:\Python27\Scripts (or wherever you installed Python) 
+			to your environment variables
+3.  Follow the instructions to install easy_install
+4.  the rest of the packages can be installed using easy_install.exe from the windows command prompt
+			E.G.  easy_install.exe ipython
+
+			if at any point you are told that another package is needed, use easy_install.exe to install it
+			
+5.  In order to build and install the C extension library, you must install Microsoft Visual C
+
+
 
 ## Running this code
 
