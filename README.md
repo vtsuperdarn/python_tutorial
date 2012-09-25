@@ -43,8 +43,32 @@ In order to run the examples provided in this repository, you will need:
 
 ### Linux
 
+most linux distributions come with package managers (yum, aptitude, easy_install...). Use it to install python.
+
+#### Ubuntu
+
+    apt-get install -y python2.7 python-pip ipython
+    pip install --upgrade ipython
+    apt-get install -y ipython-notebook ipython-qtconsole
+    apt-get install -y python-scipy python-matplotlib python-mpltoolkits.basemap python-h5py
+
+Note: aptitude does not install the latest version of basemap yet. For a more up-to-date version, go on the basemap website and follow install instructions.
 
 ### MacOS
+
+We strongly recommend using [MacPorts](http://www.macports.org/). Using MacPorts you can run the following lines to install python and useful modules.
+
+    ver=27
+    port install python${ver}
+    port install py${ver}-ipython
+    port install py${ver}-numpy
+    port install py${ver}-matplotlib
+    port install py${ver}-matplotlib-basemap
+    port install py${ver}-scipy
+    port install py${ver}-h5py
+    port install py${ver}-tornado
+    port install py${ver}-zmq
+    port install py${ver}-pil
 
 
 ### Windows
@@ -53,6 +77,8 @@ In order to run the examples provided in this repository, you will need:
 ## Running this code
 
 To open IPython notebooks (*.ipynb), simply start the notebook interface in this directory, or start it anywhere then drag and drop the notebooks in your browser.
+  
+To start IPython notebook, run
 
     $ ipython notebook --pylab=inline
 
