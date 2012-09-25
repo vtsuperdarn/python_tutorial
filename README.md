@@ -3,9 +3,10 @@ python_tutorial
 
 Python tutorial for Space@VT Grad seminar
 
-**Authors:**: 	AJ Ribeiro
-		Nathaniel A. Frissell
-		Sebastien de Larquier
+**Authors:** 	 
+		AJ Ribeiro    
+		Nathaniel A. Frissell    
+		Sebastien de Larquier    
 
 ### Content
 * Repository content
@@ -43,8 +44,6 @@ In order to run the examples provided in this repository, you will need:
 
 ### Linux
 
-most linux distributions come with package managers (yum, aptitude, easy_install...). Use it to install python.
-
 #### Ubuntu
 
     apt-get install -y python2.7 python-pip ipython
@@ -54,6 +53,11 @@ most linux distributions come with package managers (yum, aptitude, easy_install
 
 Note: aptitude does not install the latest version of basemap yet. For a more up-to-date version, go on the basemap website and follow install instructions.
 
+#### Other distributions
+
+Most linux distributions come with package managers (like aptitude for Ubuntu, or Yum for Fedora). Use it to install python.
+  
+  
 ### MacOS
 
 We strongly recommend using [MacPorts](http://www.macports.org/). Using MacPorts you can run the following lines to install python and useful modules.
@@ -77,12 +81,11 @@ We strongly recommend using [MacPorts](http://www.macports.org/). Using MacPorts
 2.  Add c:\Python and c:\Python27\Scripts (or wherever you installed Python) 
 			to your environment variables
 3.  Follow the instructions to install setuptools from http://pypi.python.org/pypi/setuptools
-4.  the rest of the packages can be installed using easy_install.exe from the windows command prompt
-			E.G.  easy_install.exe ipython
+4.  the rest of the packages can be installed using easy_install.exe from the windows command prompt, E.G.  easy_install.exe ipython
 
-			if at any point you are told that another package is needed, use easy_install.exe to install it
+	if at any point you are told that another package is needed, use easy_install.exe to install it
 			
-5.  In order to build and install the C extension library, you must install Microsoft Visual C
+NOTE:  In order to build and install the C extension library, you must install Microsoft Visual C
 
 
 
