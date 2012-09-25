@@ -43,8 +43,6 @@ In order to run the examples provided in this repository, you will need:
 
 ### Linux
 
-most linux distributions come with package managers (yum, aptitude, easy_install...). Use it to install python.
-
 #### Ubuntu
 
     apt-get install -y python2.7 python-pip ipython
@@ -54,6 +52,11 @@ most linux distributions come with package managers (yum, aptitude, easy_install
 
 Note: aptitude does not install the latest version of basemap yet. For a more up-to-date version, go on the basemap website and follow install instructions.
 
+#### Other distributions
+
+Most linux distributions come with package managers (like aptitude for Ubuntu, or Yum for Fedora). Use it to install python.
+  
+  
 ### MacOS
 
 We strongly recommend using [MacPorts](http://www.macports.org/). Using MacPorts you can run the following lines to install python and useful modules.
