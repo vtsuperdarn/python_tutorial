@@ -52,7 +52,7 @@ In order to run the examples provided in this repository, you will need:
 1.  Download and install Python 2.7 from http://www.python.org/download/
 2.  Add c:\Python and c:\Python27\Scripts (or wherever you installed Python) 
 			to your environment variables
-3.  Follow the instructions to install easy_install
+3.  Follow the instructions to install setuptools from http://pypi.python.org/pypi/setuptools
 4.  the rest of the packages can be installed using easy_install.exe from the windows command prompt
 			E.G.  easy_install.exe ipython
 
