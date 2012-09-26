@@ -59,18 +59,18 @@ Take care of dependencies:
     apt-get install -y easy_install
     easy_install networkx
     apt-get install -y gfortran
-    apt-get install -y python-numpy-dbg (Maybe needed, maybe not)
+    apt-get install -y python-numpy-dbg # (Maybe needed, maybe not)
     easy_install ffnet
-    apt-get install libncurses5-dev (Needed for NASA CDF)
+    apt-get install libncurses5-dev # (Needed for NASA CDF)
 
 You also need the NASA CDF library:
 Download tar.gz file from http://cdf.gsfc.nasa.gov/
 Follow instructions in README.install.  In summary:
 
     make OS=linux ENV=gnu all
-    make test (Optional step... just makes sure everything is working!)
-    make INSTALLDIR=/usr/local/cdf install (Feel free to change the install directory if you like.)
-    Source /usr/local/cdf/bin/definitions.B in your .bashrc file!!
+    make test # (Optional step... just makes sure everything is working!)
+    make INSTALLDIR=/usr/local/cdf install # (Feel free to change the install directory if you like.)
+    # Source /usr/local/cdf/bin/definitions.B in your .bashrc file!!
 
 Now go download SpacePy from http://spacepy.lanl.gov/.  They have good instructions, but
 if you did everything above, you should be able to just run their install script and it
