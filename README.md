@@ -54,7 +54,8 @@ In order to run the examples provided in this repository, you will need:
 Note: aptitude does not install the latest version of basemap yet. For a more up-to-date version, go on the basemap website and follow install instructions.
 
 ### SpacePy on Ubuntu
-  Take care of dependencies:
+Take care of dependencies:
+
     apt-get install -y easy_install
     easy_install networkx
     apt-get install -y gfortran
@@ -62,17 +63,19 @@ Note: aptitude does not install the latest version of basemap yet. For a more up
     easy_install ffnet
     apt-get install libncurses5-dev (Needed for NASA CDF)
 
-  You also need the NASA CDF library:
-    Download tar.gz file from http://cdf.gsfc.nasa.gov/
-    Follow instructions in README.install.  In summary:
-      make OS=linux ENV=gnu all
-      make test (Optional step... just makes sure everything is working!)
-      make INSTALLDIR=/usr/local/cdf install (Feel free to change the install directory if you like.)
-      Source /usr/local/cdf/bin/definitions.B in your .bashrc file!!
+You also need the NASA CDF library:
+Download tar.gz file from http://cdf.gsfc.nasa.gov/
+Follow instructions in README.install.  In summary:
 
-  Now go download SpacePy from http://spacepy.lanl.gov/.  They have good instructions, but
-  if you did everything above, you should be able to just run their install script and it
-  should be good to go:
+    make OS=linux ENV=gnu all
+    make test (Optional step... just makes sure everything is working!)
+    make INSTALLDIR=/usr/local/cdf install (Feel free to change the install directory if you like.)
+    Source /usr/local/cdf/bin/definitions.B in your .bashrc file!!
+
+Now go download SpacePy from http://spacepy.lanl.gov/.  They have good instructions, but
+if you did everything above, you should be able to just run their install script and it
+should be good to go:
+
     python setup.py install
 
 #### Other distributions
