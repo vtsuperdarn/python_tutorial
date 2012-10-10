@@ -102,6 +102,8 @@ We strongly recommend using [MacPorts](http://www.macports.org/). Using MacPorts
 
 ### Windows
 
+Unfortunately, although python runs on windows, it is poorly supported and requires a lot of patience to install...
+
 1.  Download and install Python 2.7 from http://www.python.org/download/
 2.  Add c:\Python and c:\Python27\Scripts (or wherever you installed Python) 
 			to your environment variables
@@ -110,7 +112,9 @@ We strongly recommend using [MacPorts](http://www.macports.org/). Using MacPorts
 
 	if at any point you are told that another package is needed, use easy_install.exe to install it
 			
-NOTE:  In order to build and install the C extension library, you must install Microsoft Visual C (MSVC)
+NOTES:
+* If your install fails, look into manually installing the binaries ([http://www.lfd.uci.edu/~gohlke/pythonlibs/](http://www.lfd.uci.edu/~gohlke/pythonlibs/))
+* In order to build and install the C extension library, you must install Microsoft Visual C (MSVC)
 
 
 
