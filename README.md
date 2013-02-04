@@ -118,7 +118,8 @@ NOTES:
 * In order to build and install the C extension library, you must install Microsoft Visual C (MSVC)
 
 
-## Setting-up an IPython Notebook server
+
+## Setting-up an IPython Notebook server (on Ubuntu)
 
 Assuming you have installed all of the above, follow these instructions to set-up a notebook server (adapted from [here](http://ipython.org/ipython-doc/rel-0.13.1/interactive/htmlnotebook.html)).
 
@@ -169,6 +170,8 @@ To start the notebook, I recommend you create an alias. Open your ~/.bashrc file
 
     alias ipython-server='ipython notebook --profile=nbserver'
     
+Finally restart your terminal or source your bashrc.
+
 Now you just have to start the notebook server from the directory where you want your notebooks to be stored. 
 CD into the desired directory and run
 
@@ -176,6 +179,7 @@ CD into the desired directory and run
     
 You should see a message telling you your notebook server has been started and is accessible at https://your.ip.address:9999.
 You will have to accept the certificate (as it is self-signed), and enter your password. Then you are good to go!
+
 
 
 ## Running this code
