@@ -12,7 +12,7 @@ Python tutorial for Space@VT Grad seminar
 * Repository content
 * Python install instructions
 * Running this code
-* Setting-up a IPython Notebook server (on Ubuntu) -- just for fun
+* [See the wiki for more stuff](https://github.com/vtsuperdarn/python_tutorial/wiki)
 
 ## Repository content
   
@@ -134,67 +134,3 @@ To run *.py files, execute
 or from an IPython console
 
     $ run your_script.py
-
-
-
-## Setting-up an IPython Notebook server (on Ubuntu)
-
-This is a bonus step for more advanced use of IPython.
-Assuming you have installed all of the above, follow these instructions to set-up a notebook server (adapted from [here](http://ipython.org/ipython-doc/rel-0.13.1/interactive/htmlnotebook.html)).
-
-First create a nbserver ipython profile
-
-    $ ipython profile create nbserver
-
-Then start an ipython session
-
-    $ ipython
-
-And create a hashed password using
-
-    In [1]: from IPython.lib import passwd
-    In [2]: passwd()
-    Enter password:
-    Verify password:
-    Out[2]: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
-
-Then exit ipython and run
-
-    $ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout ipycert.pem -out ipycert.pem
-    $ sudo mv ipycert.pem /etc/ssl/certs/ipycert.pem
-
-Then open the ~/.config/ipython/profile_nbserver/ipython_notebook_config.py and add the following lines
-
-    c = get_config()
-
-    # Kernel config
-    c.IPKernelApp.pylab = 'inline'  # if you want plotting support always
-
-    # Notebook config
-    c.NotebookApp.certfile = u'/etc/ssl/certs/ipycert.pem'
-    c.NotebookApp.ip = '*' # Replace '*' with your IP (i.e., sd-work0.ece.vt.edu)
-    c.NotebookApp.open_browser = False
-    c.NotebookApp.password = u'sha1:bcd259ccf...your hashed password here'
-    # It's a good idea to put it on a known, fixed port
-    c.NotebookApp.port = 9999
-    
-    # Add this for auto-reload
-    # lines of code to run at IPython startup
-    c.IPKernelApp.exec_lines = [
-    	'%load_ext autoreload', 
-    	'%autoreload 2'
-    ]
-
-To start the notebook, I recommend you create an alias. Open your ~/.bashrc file and add the following line
-
-    alias ipython-server='ipython notebook --profile=nbserver'
-    
-Finally restart your terminal or source your bashrc.
-
-Now you just have to start the notebook server from the directory where you want your notebooks to be stored. 
-CD into the desired directory and run
-
-    $ ipython-server&
-    
-You should see a message telling you your notebook server has been started and is accessible at https://your.ip.address:9999.
-You will have to accept the certificate (as it is self-signed), and enter your password. Then you are good to go!
