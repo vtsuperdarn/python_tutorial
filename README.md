@@ -11,8 +11,8 @@ Python tutorial for Space@VT Grad seminar
 ### Content
 * Repository content
 * Python install instructions
-* Setting-up a IPython Notebook server (on Ubuntu)
 * Running this code
+* Setting-up a IPython Notebook server (on Ubuntu) -- just for fun
 
 ## Repository content
   
@@ -119,8 +119,27 @@ NOTES:
 
 
 
+## Running this code
+
+To open IPython notebooks (*.ipynb), simply start the notebook interface in this directory, or start it anywhere then drag and drop the notebooks in your browser.
+  
+To start IPython notebook, run
+
+    $ ipython notebook --pylab=inline
+
+To run *.py files, execute
+
+    $ python your_script.py
+
+or from an IPython console
+
+    $ run your_script.py
+
+
+
 ## Setting-up an IPython Notebook server (on Ubuntu)
 
+This is a bonus step for more advanced use of IPython.
 Assuming you have installed all of the above, follow these instructions to set-up a notebook server (adapted from [here](http://ipython.org/ipython-doc/rel-0.13.1/interactive/htmlnotebook.html)).
 
 First create a nbserver ipython profile
@@ -179,21 +198,3 @@ CD into the desired directory and run
     
 You should see a message telling you your notebook server has been started and is accessible at https://your.ip.address:9999.
 You will have to accept the certificate (as it is self-signed), and enter your password. Then you are good to go!
-
-
-
-## Running this code
-
-To open IPython notebooks (*.ipynb), simply start the notebook interface in this directory, or start it anywhere then drag and drop the notebooks in your browser.
-  
-To start IPython notebook, run
-
-    $ ipython notebook --pylab=inline
-
-To run *.py files, execute
-
-    $ python your_script.py
-
-or from an IPython console
-
-    $ run your_script.py
